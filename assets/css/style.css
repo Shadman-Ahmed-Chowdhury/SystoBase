@@ -1,0 +1,278 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; 
+
+
+* {
+	padding: 0; 
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	 
+	
+}
+
+#header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 50px;
+}
+
+nav {
+	margin: 0; 
+	font-family: 'Poppins', sans-serif;
+	background-color: #00cba9;
+	max-height: 50px;
+	
+}
+.navbar {
+	background-color: #00cba9;
+}
+.navbar-brand {
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+}
+.navbar-collapse {
+
+	background-color: #00cba9;
+}
+.navbar-toggler {
+	outline: none !important;
+}
+
+.fa-bars {
+	color: #fff; 
+	font-size: 30px !important;
+}
+
+ul {
+	margin: auto 0;
+	padding: 5px 10px;
+	list-style: none;		
+	display: table;
+	text-align: center; 
+
+}
+li {
+	display: table-cell; 
+	position: relative;
+	
+}
+li a {
+	color: #fff!important; 
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none; 
+	letter-spacing: 0.06em;
+	float: right; 
+	text-align: left;  
+	display: inline-block;
+	padding: 10px 10px;
+	position: relative;
+}
+li a:after {
+	background: none repeat scroll 0 0 trasparent; 
+	bottom: 0; 
+	content: "";
+	display: block; 
+	height: 2px; 
+	left: 50%; 
+	position: absolute; 
+	background: #fff; 
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+li a:hover:after {
+	width: 100%; 
+	left: 0; 
+}
+
+/************ Banner Section  *********************/
+
+
+#banner {
+	width: 100%;
+
+	background-color: #00cba9;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.promo-title {
+	font-size: 50px; 
+	font-weight: 600;
+	margin-top: 80px;
+	text-shadow: 1px 1px green;
+}
+
+.promo {
+	font-size: 20px; 
+	font-weight: 500;
+
+}
+
+.banner-bg {
+	margin-top: 80px;
+	margin-bottom: -50px;
+
+}
+.banner-bg img {
+	margin: 0px auto; 
+	width: 600px; 
+	height: 250px;
+}
+
+/****** Services Section ********/
+
+#services {
+	padding: 40px 40px;
+}
+
+
+.section-title {
+	
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+.section-title::after {
+	content: '';
+	background: #00cba9;
+	height: 5px; 
+	width: 200px; 
+	margin-top: 5px;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 50px;
+	display: block;
+}
+
+
+.services-img {
+	width: 150px; 
+
+}
+.services {
+	border: 1px solid #ddd;
+	margin: 10px auto;
+	padding: 30px 30px;
+	-webkit-box-shadow: 16px 23px 10px -6px rgba(199,187,199,0.82);
+	-moz-box-shadow: 16px 23px 10px -6px rgba(199,187,199,0.82);
+	box-shadow: 16px 23px 10px -6px rgba(199,187,199,0.82);
+	transition: background 0.7s ease; 
+	background-color: #f1f1f1; 
+}
+.services:hover {
+	background: #02e8c1;
+}
+
+.card-subtitle {
+	font-family: 'Montserrat', sans-serif; 
+}
+
+
+.btn-outline-dark {
+	margin-top: 20px;
+}
+
+
+/*********  Our Team *****/
+#ourteam {
+	padding: 40px 40px;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+.sub-container {
+	width: 100%; 
+	margin: auto;
+	padding: 20px 20px 0px 0px;
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+
+
+.members {
+	margin: 10px; 
+	padding: 20px;
+	max-width: 25%;
+	box-sizing: border-box;
+	cursor: pointer; 
+	transition: 0.3s;
+}
+
+.members:hover {
+	background: #ededed; 
+}
+
+.members img {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #e1e0de; 
+	border-radius: 50%;
+}
+
+.name {
+	padding: 20px; 
+	font-size: 18px; 
+}
+
+.post {
+	font-style: italic; 
+}
+
+.social-media {
+	margin: 10px; 
+}
+
+.social-media a {
+	display: inline-block; 
+	height: 20px; 
+	width: 30px;
+	transition: 0.2s; 
+}
+.social-media a:hover {
+	transform: scale(1.3); 
+}
+
+.social-media a i {
+	color: #444;
+}
+
+@media screen and (max-width: 980px) {
+	.members {
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 600) {
+	.members {
+		max-width: 100%;
+	}
+}
+
+
+#ourwork {
+	padding: 40px 40px;
+	height: 500px;
+	
+}
+
+
+
+
+
+
+
+
+@media screen and(max-height: 300px) {
+	ul {
+		margin-top: 40px; 
+	}
+}
+
